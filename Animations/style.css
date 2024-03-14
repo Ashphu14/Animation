@@ -1,0 +1,226 @@
+html {
+  height: 100%;
+  
+}
+body {
+  margin:0;
+  padding:0;
+  height:100vh;
+  width:100vw;
+  font-family: sans-serif;
+  /* background: linear-gradient(#141e30, #243b55); */
+  background-color: white;
+}
+.outer{
+  /* display:flex-column; */
+  /* justify-content:center;
+  align-items:center;
+  place-content: center;   */
+  margin-top:80px;
+  margin-left :400px;
+  width :300px;
+  height :300px;
+  background-color:white;
+  animation: rotate 50s infinite linear;
+}
+.outerCircle{
+  /* margin-top:30px; */
+  position: relative;
+  /* border: 1px solid #036cdb; */
+  width: 100%; 
+  height: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  place-content: center; 
+  /* display :absolute; */
+  /* margin-left: 30px;; */
+/*   overflow: hidden;  */
+  border-radius: 50%;
+}
+.apple{
+  position: relative;
+  top:-32%;
+  left:85%;
+  width:45px;
+  height:45px;
+  animation: rotateElement 50s infinite linear;
+}
+.google{
+  position: relative;
+  top:-45%;
+  /* right:240px; */
+  height: 40px;
+  width:40px;
+  animation: rotateElement 50s infinite linear;
+}
+.google img{
+  width:40px;
+  height:40px;
+}
+.microsoft{
+  position: relative;
+  top:-107%;
+  /* left:3%; */
+  /* right:240px; */
+  height: 35px;
+  width:35px;
+  animation: rotateElement 50s infinite linear;
+}
+.microsoft img{
+  background-color: white;
+  width:30px;
+  height:30px;
+}
+.amazon{
+  position: relative;
+  top:-120%;
+  left:87%;
+  height: 40px;
+  width:40px;
+  animation: rotateElement 50s infinite linear;
+}
+.amazon img{
+  width:40px;
+  height:40px;
+}
+.meta{
+  position: relative;
+  top:-60%;
+  left:43%;
+  height: 40px;
+  width:40px;
+  animation: rotateElement 50s infinite linear;
+}
+.meta img{
+  background-color: white;
+  width:40px;
+  height:40px;
+}
+.netflix{
+  position: relative;
+  top:-173%;
+  left:43%;
+  height: 40px;
+  width:37px;
+  animation: rotateElement 50s infinite linear;
+}
+.netflix img{
+  background-color: white;
+  width:40px;
+  height:37px;
+}
+
+.middleCircle{
+  /* border: 1px solid #036cdb; */
+  background-color: rgb(241,228,255);
+  width: 75%; 
+  height: 75%;
+  border-radius: 50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  place-content: center;
+}
+.innerCircle{
+  /* border: 1px solid #036cdb; */
+  background-color: white;
+  width: 60%; 
+  height: 60%;
+  border-radius: 50%;
+  animation: antiRotate 25s infinite linear; 
+}
+.uber{
+  position: relative;
+  top:2%;
+  height: 40px;
+  width:40px;
+  animation: antirotateElement 50s infinite linear;
+}
+.uber img{
+  width:40px;
+  height:40px;
+}
+.flipkart{
+  position: relative;
+  top: -25%;
+  left:75%;
+  height: 35px;
+  width:35px;
+  animation: antirotateElement 50s infinite linear;
+}
+.flipkart img{
+  width:35px;
+  height:35px;
+}
+.adobe{
+  position: relative;
+  top:9%;
+  left:-2%;
+  /* right:240px; */
+  height: 35px;
+  width:35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: antirotateElement 50s infinite linear;
+}
+.adobe img{
+  
+  background-color: white;
+  width:32px;
+  height:32px;
+}
+.linkedin{
+  position: relative;
+  top:-19%;
+  left:75%;
+  /* right:240px; */
+  height: 40px;
+  width:40px;
+  animation: antirotateElement 50s infinite linear;
+}
+.linkedin img{
+  width:30px;
+  height:30px;
+}
+
+
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+@keyframes rotateElement {
+  from {
+      transform: rotate(360deg);
+  }
+  to {
+      transform: rotate(0deg);
+  }
+}
+
+@keyframes antiRotate {
+  from {
+      transform: rotate(360deg);
+  }
+  to {
+      transform: rotate(0deg);
+  }
+}
+@keyframes antirotateElement {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
+
+ 
